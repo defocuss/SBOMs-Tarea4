@@ -28,7 +28,7 @@
         }
     },
 
-    "postCreateCommand": "uv sync && uv run python -m ipykernel install --user --name ciberseguridad --display-name 'Python (ciberseguridad)'",
+    "postCreateCommand": "uv run python scripts/add_submodules.py && git submodule update --init --recursive && uv sync && uv run python -m ipykernel install --user --name ciberseguridad --display-name 'Python (ciberseguridad)'",
     "remoteUser": "vscode",
     "runArgs": ["--name", "python-ciberseguridad-dev-container"]
 }

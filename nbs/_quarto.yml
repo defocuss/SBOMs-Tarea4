@@ -1,6 +1,9 @@
 project:
     type: website
     output-dir: _docs
+    render:
+        - "*.ipynb"
+        - "sbom/*.ipynb"
 lang: es
 format:
     html:
@@ -19,6 +22,7 @@ website:
         search: true
     sidebar:
         style: floating
+        pinned: true
 
 metadata-files: [nbdev.yml, sidebar.yml]
 
