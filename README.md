@@ -35,8 +35,8 @@ Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.
 ### 1. Clona este repositorio
 
 ``` bash
-git clone https://github.com/dci-courses/DatosPlusPlus.git
-cd DatosPlusPlus
+git clone https://github.com/dci-courses/ciberseguridad_2026.git
+cd ciberseguridad_2026
 ```
 
 ### 2. Abre el proyecto en VS Code
@@ -61,5 +61,5 @@ preconfigurado.
 
 1.  Abre cualquier notebook `.ipynb`
 2.  Al ejecutar una celda por primera vez, selecciona el kernel:
-    **Python (DatosPlusPlus)** ![Seleccionar
+    **ciberseguridad-2026** ![Seleccionar
     Kernel](https://raw.githubusercontent.com/dci-courses/ciberseguridad_2026/main/nbs/images/Seleccionar-Kernel.png)
