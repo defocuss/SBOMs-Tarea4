@@ -1,10 +1,10 @@
 # 🔐 Ciberseguridad 2026 - Análisis de Seguridad
 
-¡Bienvenido! Este proyecto automatiza la evaluación de repositorios mediante **SBOM** (Software Bill of Materials) y **CodeQL**.
+¡Bienvenido! Este libro detalla la automatización de la evaluación de repositorios mediante **SBOM** (Software Bill of Materials), **CodeQL** y **Grype**.
 
 💡 **Tip:** Presiona **Ctrl + Shift + V** (o **Cmd + Shift + V** en Mac) para leer este documento en modo vista previa.
 
-Si todo ha salido bien entonces en este momento se esta realizando la construcción del contenedor, esto puede tardar unos minutos(5-10~), mientras tanto te invito a leer este documento para que comprendas la estructura del libro.
+Si todo ha salido bien entonces en este momento se está realizando la instalación de dependencias, esto puede tardar unos minutos(5-10~), mientras tanto te invito a leer este documento para que comprendas la estructura del libro.
 
 ---
 
@@ -41,10 +41,16 @@ Idealmente puedes realizar el proceso a traves de los notebook para la mejor exp
 uv run scripts/generate_sboms.py
 ```
 
-**Para CodeQL (Análisis de Seguridad):**
+**Para CodeQL (Análisis Estático - Vulnerabilidades en Código):**
 
 ```bash
 uv run scripts/generate_codeql.py
+```
+
+**Para Grype (Escaneo de Vulnerabilidades en Dependencias):**
+
+```bash
+uv run scripts/generate_grype.py
 ```
 
 ### 3. Ver Resultados
@@ -60,18 +66,20 @@ Los resultados se guardan en `data/results/`:
 
 ### Notebooks de Análisis
 
-| Nombre                  | Ubicación                          | Descripción                                   |
-| ----------------------- | ---------------------------------- | --------------------------------------------- |
-| **Generación de SBOMs** | `nbs/sbom/generacion_sbom.ipynb`   | Genera Software Bill of Materials usando Syft |
-| **Análisis CodeQL**     | `nbs/vuln/generacion_codeql.ipynb` | Análisis de seguridad estático con CodeQL     |
+| Nombre                      | Ubicación                          | Descripción                                                 |
+| --------------------------- | ---------------------------------- | ----------------------------------------------------------- |
+| **Generación de SBOMs**     | `nbs/sbom/generacion_sbom.ipynb`   | Genera Software Bill of Materials usando Syft               |
+| **Análisis CodeQL**         | `nbs/vuln/generacion_codeql.ipynb` | Análisis de seguridad estático (vulnerabilidades en código) |
+| **Escaneo de Dependencias** | `nbs/vuln/generacion_grype.ipynb`  | Escanea vulnerabilidades en dependencias usando Grype       |
 
 ### Scripts
 
-| Script               | Ubicación  | Descripción                             |
-| -------------------- | ---------- | --------------------------------------- |
-| `generate_sboms.py`  | `scripts/` | Automatiza generación de SBOMs          |
-| `generate_codeql.py` | `scripts/` | Automatiza análisis CodeQL              |
-| `add_submodules.py`  | `scripts/` | Agrega repositorios como submódulos Git |
+| Script               | Ubicación  | Descripción                                |
+| -------------------- | ---------- | ------------------------------------------ |
+| `generate_sboms.py`  | `scripts/` | Automatiza generación de SBOMs             |
+| `generate_codeql.py` | `scripts/` | Automatiza análisis estático (CodeQL)      |
+| `generate_grype.py`  | `scripts/` | Automatiza escaneo de dependencias (Grype) |
+| `add_submodules.py`  | `scripts/` | Agrega repositorios como submódulos Git    |
 
 ---
 
@@ -85,10 +93,15 @@ ciberseguridad_2026/
 │   └── repos.json       # Configuración de repos
 ├── nbs/                 # Notebooks Jupyter
 │   ├── sbom/            # Análisis de SBOMs
-│   └── vuln/            # Análisis CCCodeQL
+│   └── vuln/            # Análisis de vulnerabilidades
+│       ├── generacion_codeql.ipynb          # CodeQL
+│       ├── explicacion_script_codeql.ipynb
+│       ├── generacion_grype.ipynb           # Grype
+│       └── explicacion_script_grype.ipynb
 ├── scripts/             # Automatización
 │   ├── generate_sboms.py
 │   ├── generate_codeql.py
+│   ├── generate_grype.py
 │   └── add_submodules.py
 ├── .devcontainer/       # Configuración DevContainer
 └── WELCOME.md           # Este archivo
@@ -152,9 +165,11 @@ uv run scripts/add_submodules.py && git submodule update --init --recursive
 ### Diagnóstico Rápido
 
 ```bash
-# Ver qué query packs están disponibles
-codeql pack ls codeql/python-queries
-codeql pack ls codeql/javascript-queries
+# Diagnosticar CodeQL
+uv run scripts/generate_codeql.py --diagnose
+
+# Diagnosticar Grype
+uv run scripts/generate_grype.py --diagnose
 
 # Ver versiones instaladas
 node --version

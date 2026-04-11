@@ -8,7 +8,7 @@
 Bienvenido/a al repositorio de **Ciberseguridad_2026**.  
 Este proyecto está completamente preconfigurado con un **Dev Container**
 en Visual Studio Code que incluye todas las herramientas necesarias para
-análisis de seguridad (SBOM y CodeQL).
+análisis de seguridad (SBOM, CodeQL y Grype).
 
 ------------------------------------------------------------------------
 
@@ -71,6 +71,7 @@ Durante la construcción, se realizarán:
 - ✅ Instalación de dependencias Python
 - ✅ Configuración de Jupyter Kernel
 - ✅ Descarga de CodeQL query packs
+- ✅ Actualización de BD de Grype
 - ✅ Verificación de herramientas
 
 **Esto puede tomar 3-10 minutos la primera vez.** Ten paciencia y no
@@ -121,11 +122,12 @@ El Dev Container preinstala automáticamente:
 
 ### 🔐 Herramientas de Seguridad
 
-| Herramienta    | Versión | Uso                                           |
-|----------------|---------|-----------------------------------------------|
-| **CodeQL CLI** | 2.25.1  | Análisis estático de seguridad                |
-| **Syft**       | Latest  | Generación de SBOMs                           |
-| **Node.js**    | 20      | Necesario para análisis JavaScript con CodeQL |
+| Herramienta | Versión | Uso |
+|----|----|----|
+| **CodeQL CLI** | 2.25.1 | Análisis estático de seguridad (vulnerabilidades en código) |
+| **Grype** | Latest | Escaneo de vulnerabilidades en dependencias |
+| **Syft** | Latest | Generación de SBOMs (inventario de componentes) |
+| **Node.js** | 20 | Necesario para análisis JavaScript con CodeQL |
 
 ### 📦 Query Packs de CodeQL
 
@@ -143,27 +145,32 @@ Abre una terminal en VS Code (``` Ctrl + `` ```) y ejecuta:
 
 ``` bash
 uv run scripts/generate_codeql.py --diagnose
+uv run scripts/generate_grype.py --diagnose
 ```
 
 Deberías ver:
 
     ✓ CodeQL CLI: CodeQL version 2.25.1
+    ✓ Grype CLI: Grype version X.X.X
     ✓ Node.js: v20.x.x
     ✓ npm: x.x.x
     ✓ Query pack codeql/python-queries disponible
     ✓ Query pack codeql/javascript-queries disponible
+    ✓ Grype DB status: Database ready
 
 ### 2. Explorar el Proyecto
 
 Lee el contenido de: - **`WELCOME.md`**: Guía general del proyecto -
 **`nbs/sbom/generacion_sbom.ipynb`**: Notebook para generar SBOMs -
-**`nbs/vuln/generacion_codeql.ipynb`**: Notebook para ejecutar CodeQL
+**`nbs/vuln/generacion_codeql.ipynb`**: Notebook para ejecutar análisis
+estático (CodeQL) - **`nbs/vuln/generacion_grype.ipynb`**: Notebook para
+escanear vulnerabilidades en dependencias (Grype)
 
 ### 3. Ejecutar tu Primer Análisis
 
-Idealmente puedes realizar el proceso a traves de los notebook para la
+Idealmente puedes realizar el proceso a través de los notebooks para la
 mejor experiencia, sin embargo, también puedes ejecutar los archivos de
-forma individual
+forma individual.
 
 Desde la terminal:
 
@@ -171,8 +178,11 @@ Desde la terminal:
 # Generar SBOMs para los repositorios
 uv run scripts/generate_sboms.py
 
-# O ejecutar análisis de seguridad con CodeQL
+# Ejecutar análisis de seguridad estático con CodeQL
 uv run scripts/generate_codeql.py
+
+# Escanear vulnerabilidades en dependencias con Grype
+uv run scripts/generate_grype.py
 ```
 
 Los resultados se guardarán en `data/results/`
@@ -188,10 +198,15 @@ Los resultados se guardarán en `data/results/`
     │   └── repos.json          # Configuración de repositorios
     ├── nbs/                    # Notebooks Jupyter
     │   ├── sbom/               # Análisis de SBOMs
-    │   └── vuln/               # Análisis de CodeQL
+    │   └── vuln/               # Análisis de vulnerabilidades
+    │       ├── generacion_codeql.ipynb          # Análisis estático
+    │       ├── explicacion_script_codeql.ipynb
+    │       ├── generacion_grype.ipynb           # Escaneo de dependencias
+    │       └── explicacion_script_grype.ipynb
     ├── scripts/                # Automatización
     │   ├── generate_sboms.py
     │   ├── generate_codeql.py
+    │   ├── generate_grype.py
     │   └── add_submodules.py
     ├── .devcontainer/          # Configuración del Dev Container
     ├── README.md               # Será generado automáticamente
@@ -216,8 +231,8 @@ desde Applications - Linux: Ejecuta `sudo systemctl start docker`
 ### ❌ “La construcción del contenedor es muy lenta”
 
 **Normal para la primera vez** (puede tomar 5-10 minutos) - Se descargan
-imágenes base - Se compilan herramientas como CodeQL - Próximas
-aperturas serán mucho más rápidas
+imágenes base - Se compilan herramientas como CodeQL - Se descarga la BD
+de Grype - Próximas aperturas serán mucho más rápidas
 
 ### ❌ “Python kernel no aparece en Jupyter”
 
@@ -234,6 +249,16 @@ uv run scripts/generate_codeql.py --diagnose
 ```
 
 Verifica que todos los componentes tengan ✓
+
+### ❌ “Grype análisis falla”
+
+**Ejecuta el diagnóstico**:
+
+``` bash
+uv run scripts/generate_grype.py --diagnose
+```
+
+Verifica que Grype CLI y su BD estén disponibles
 
 ------------------------------------------------------------------------
 
@@ -280,6 +305,5 @@ Verifica que todos los componentes tengan ✓
 - Consulta **`WELCOME.md`** para instrucciones detalladas
 - Revisa los **notebooks** para ejemplos paso a paso
 - Verifica el **diagnóstico**:
-  `uv run scripts/generate_codeql.py --diagnose`
-
-------------------------------------------------------------------------
+  `uv run scripts/generate_codeql.py --diagnose` y
+  `uv run scripts/generate_grype.py --diagnose`

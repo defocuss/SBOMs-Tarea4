@@ -7,6 +7,9 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 # Install syft
 RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
+# Install Grype (Software Vulnerability Scanner)
+RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+
 # Install Node.js (required for CodeQL JavaScript analysis and autobuild)
 # Remove problematic yarn repository first to avoid GPG key errors
 RUN rm -f /etc/apt/sources.list.d/yarn.list && \
@@ -31,8 +34,9 @@ RUN codeql pack download codeql/python-queries \
     && codeql pack download codeql/java-queries \
     || echo "Note: Some query packs may not be available in offline mode. They will be downloaded on first use."
 
-# Verify CodeQL installation
+# Verify CodeQL, Grype, Node.js, and npm installation
 RUN echo "CodeQL version:" && codeql version \
+    && echo "Grype version:" && grype version \
     && echo "Node.js version:" && node --version \
     && echo "npm version:" && npm --version
 
