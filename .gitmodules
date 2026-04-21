@@ -1,9 +1,27 @@
-[submodule "data/repos/claude-code-action"]
-	path = data/repos/claude-code-action
-	url = https://github.com/anthropics/claude-code-action.git
-[submodule "data/repos/genai-code-review"]
-	path = data/repos/genai-code-review
-	url = https://github.com/cirolini/genai-code-review.git
-[submodule "data/repos/opencode"]
-	path = data/repos/opencode
-	url = https://github.com/anomalyco/opencode.git
+[submodule "data/repos/fastapi"]
+	path = data/repos/fastapi
+	url = https://github.com/fastapi/fastapi.git
+[submodule "data/repos/full-stack-fastapi-template"]
+	path = data/repos/full-stack-fastapi-template
+	url = https://github.com/fastapi/full-stack-fastapi-template.git
+[submodule "data/repos/fastapi-new"]
+	path = data/repos/fastapi-new
+	url = https://github.com/fastapi/fastapi-new.git
+[submodule "data/repos/sqlmodel"]
+	path = data/repos/sqlmodel
+	url = https://github.com/fastapi/sqlmodel.git
+[submodule "data/repos/annotated-doc"]
+	path = data/repos/annotated-doc
+	url = https://github.com/fastapi/annotated-doc.git
+[submodule "data/repos/fastapi-cli"]
+	path = data/repos/fastapi-cli
+	url = https://github.com/fastapi/fastapi-cli.git
+[submodule "data/repos/asyncer"]
+	path = data/repos/asyncer
+	url = https://github.com/fastapi/asyncer.git
+[submodule "data/repos/typer"]
+	path = data/repos/typer
+	url = https://github.com/fastapi/typer.git
+[submodule "data/repos/fastapi-vscode"]
+	path = data/repos/fastapi-vscode
+	url = https://github.com/fastapi/fastapi-vscode.git

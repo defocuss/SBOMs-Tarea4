@@ -1,0 +1,399 @@
+{
+  "total_issues": 27,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 27,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/admin.spec.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/admin.spec.ts",
+      "region": {
+        "startLine": 49,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/admin.spec.ts",
+      "region": {
+        "startLine": 73,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/admin.spec.ts",
+      "region": {
+        "startLine": 103,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/admin.spec.ts",
+      "region": {
+        "startLine": 187,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/items.spec.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/items.spec.ts",
+      "region": {
+        "startLine": 123,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/login.spec.ts",
+      "region": {
+        "startLine": 63,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/reset-password.spec.ts",
+      "region": {
+        "startLine": 36,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/reset-password.spec.ts",
+      "region": {
+        "startLine": 37,
+        "startColumn": 23,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/reset-password.spec.ts",
+      "region": {
+        "startLine": 77,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/reset-password.spec.ts",
+      "region": {
+        "startLine": 92,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/sign-up.spec.ts",
+      "region": {
+        "startLine": 51,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/sign-up.spec.ts",
+      "region": {
+        "startLine": 76,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/sign-up.spec.ts",
+      "region": {
+        "startLine": 111,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/sign-up.spec.ts",
+      "region": {
+        "startLine": 112,
+        "startColumn": 21,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/sign-up.spec.ts",
+      "region": {
+        "startLine": 125,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/sign-up.spec.ts",
+      "region": {
+        "startLine": 138,
+        "startColumn": 20,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 31,
+        "startColumn": 16,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 70,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 94,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 111,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 132,
+        "startColumn": 22,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 133,
+        "startColumn": 25,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/user-settings.spec.ts",
+      "region": {
+        "startLine": 159,
+        "startColumn": 16,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 20,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "frontend/tests/utils/privateApi.ts",
+      "region": {
+        "startLine": 8,
+        "startColumn": 3,
+        "endColumn": 8
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 184,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "frontend/src/client/core/request.ts",
+      "region": {
+        "startLine": 328,
+        "startColumn": 6,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

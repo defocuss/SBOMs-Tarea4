@@ -1,0 +1,159 @@
+{
+  "total_vulnerabilities": 13,
+  "vulnerabilities_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 13
+  },
+  "vulnerabilities": [
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-c427-h43c-vf67",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP accepts duplicate Host headers",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-p998-jp59-783m",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP affected by UNC SSRF/NTLMv2 Credential Theft/Local File Read in static resource handler on Windows",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-m5qp-6w8w-w647",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP has a Multipart Header Size Bypass",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-w2fm-2cpv-w7v5",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "aiohttp allows unlimited trailer headers, leading to possible uncapped memory usage",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-63hf-3vf5-4wqf",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP's C parser (llhttp) accepts null bytes and control characters in response header values - header injection/security bypass",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "python-multipart",
+      "current_version": "0.0.22",
+      "vuln_id": "GHSA-mj87-hwqh-73pj",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "python-multipart affected by Denial of Service via large multipart preamble or epilogue data",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-hcc4-c3v8-rx92",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP Affected by Denial of Service (DoS) via Unbounded DNS Cache in TCPConnector",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-3wq7-rqq7-wx6j",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP has late size enforcement for non-file multipart fields causes memory DoS",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-2vrm-gr82-f7m5",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP has CRLF injection through multipart part content type header construction",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-mwh4-6h8g-pg8w",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP has HTTP response splitting via \\r in reason phrase",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "aiohttp",
+      "current_version": "3.13.3",
+      "vuln_id": "GHSA-966j-vmvw-g2g9",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "AIOHTTP leaks Cookie and Proxy-Authorization headers on cross-origin redirect",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "pygments",
+      "current_version": "2.19.2",
+      "vuln_id": "GHSA-5239-wwwm-4pmq",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Pygments has Regular Expression Denial of Service (ReDoS) due to Inefficient Regex for GUID Matching",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "authlib",
+      "current_version": "1.6.9",
+      "vuln_id": "GHSA-jj8c-mmj3-mmgv",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Authlib: Cross-site request forging when using cache",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    }
+  ],
+  "grype_metadata": {
+    "grype_version": "unknown",
+    "db_location": "",
+    "scanned_path": "/workspaces/SBOMS-FASTAPI-2/data/repos/fastapi"
+  }
+}

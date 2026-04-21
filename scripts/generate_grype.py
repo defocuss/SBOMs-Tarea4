@@ -55,7 +55,8 @@ MENSAJE_GRYPE_NO_INSTALADO = (
 
 
 if not logging.getLogger().handlers:
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
+    logging.basicConfig(level=logging.INFO,
+                        format="%(levelname)s | %(message)s")
 LOGGER = logging.getLogger(__name__)
 
 
@@ -90,7 +91,8 @@ class GrypeAnalyzer:
         ruta_repo = self.project_root / repo_path
 
         if not ruta_repo.exists():
-            raise FileNotFoundError(f"Repository path does not exist: {ruta_repo}")
+            raise FileNotFoundError(
+                f"Repository path does not exist: {ruta_repo}")
 
         if not ruta_repo.is_dir():
             raise NotADirectoryError(f"Path is not a directory: {ruta_repo}")
@@ -106,7 +108,8 @@ class GrypeAnalyzer:
             )
             return json.dumps({"matches": [], "source": None})
 
-        LOGGER.info(f"Manifests found in {ruta_repo.name}: {', '.join(manifests)}")
+        LOGGER.info(
+            f"Manifests found in {ruta_repo.name}: {', '.join(manifests)}")
 
         # Ejecutar Grype
         grype_path = self.grype_path or self._resolver_grype()
@@ -135,7 +138,8 @@ class GrypeAnalyzer:
             LOGGER.debug(f"Grype stderr: {resultado.stderr}")
 
         if not resultado.stdout:
-            raise RuntimeError(f"Grype produced no output for {ruta_repo.name}")
+            raise RuntimeError(
+                f"Grype produced no output for {ruta_repo.name}")
 
         return resultado.stdout
 
@@ -150,7 +154,8 @@ class GrypeAnalyzer:
 
         # Extraer vulnerabilidades
         vulnerabilidades_raw = grype_data.get("matches", [])
-        LOGGER.info(f"Found {len(vulnerabilidades_raw)} matches in Grype output")
+        LOGGER.info(
+            f"Found {len(vulnerabilidades_raw)} matches in Grype output")
 
         # Normalizar
         resultados = {
@@ -194,7 +199,8 @@ class GrypeAnalyzer:
 
         # Guardar formato normalizado
         ruta_normalizado = self.output_path / f"{repo_name}{SUFIJO_GRYPE}"
-        contenido_json = json.dumps(analysis_data, ensure_ascii=False, indent=2)
+        contenido_json = json.dumps(
+            analysis_data, ensure_ascii=False, indent=2)
         ruta_normalizado.write_text(contenido_json, encoding="utf-8")
         LOGGER.info(
             f"Normalized analysis saved to {ruta_normalizado.relative_to(self.project_root)}"
@@ -264,14 +270,17 @@ class GrypeAnalyzer:
 
     def _validar_directorio_repos(self):
         if not self.repos_path.exists():
-            raise FileNotFoundError(f"Repos directory not found: {self.repos_path}")
+            raise FileNotFoundError(
+                f"Repos directory not found: {self.repos_path}")
 
         if not self.repos_path.is_dir():
-            raise NotADirectoryError(f"Repos path is not a directory: {self.repos_path}")
+            raise NotADirectoryError(
+                f"Repos path is not a directory: {self.repos_path}")
 
     def _validar_directorio_salida(self):
         if self.output_path.exists() and not self.output_path.is_dir():
-            raise NotADirectoryError(f"Output path exists but is not a directory: {self.output_path}")
+            raise NotADirectoryError(
+                f"Output path exists but is not a directory: {self.output_path}")
 
     def _resolver_grype(self) -> str:
         """Busca el ejecutable de Grype en PATH."""
@@ -308,7 +317,8 @@ class GrypeAnalyzer:
             )
             LOGGER.info(f"Grype DB status: {resultado_db.stdout.strip()}")
         except Exception as e:
-            LOGGER.warning(f"Grype DB check failed (will be downloaded on first use): {e}")
+            LOGGER.warning(
+                f"Grype DB check failed (will be downloaded on first use): {e}")
 
         LOGGER.info("=== Environment Check Complete ===\n")
 
@@ -336,6 +346,18 @@ class GrypeAnalyzer:
         for archivo in ruta_repo.rglob("*"):
             if archivo.is_file() and archivo.name in manifests_soportados:
                 manifests_encontrados.append(archivo.name)
+            elif archivo.is_file() and archivo.name.lower() == "pyproject.toml":
+                try:
+                    print(
+                        "INFO | pyproject.toml detectado, generando requirements.txt temporal para Grype...")
+                    subprocess.call(["pip-compile", "--strip-extras", archivo.name.lower(),
+                                    "-o", "requirements.txt"], cwd=archivo.parent)
+                    manifests_encontrados.append("requirements.txt")
+                except Exception as e:
+                    if e in "get_requires_for_build_wheel":
+                        LOGGER.warning(
+                            "No se pudo generar requirements.txt desde pyproject.toml (Sin dependencias). Se omitirá este archivo.")
+                        LOGGER.error(f"Error detalle: {e}")
 
         # Devolver lista única ordenada
         return sorted(set(manifests_encontrados))
@@ -348,7 +370,8 @@ class GrypeAnalyzer:
         metadata = vuln.get("metadata", {})
 
         # Determinar severidad (Grype usa CVSS score)
-        cvss_score = metadata.get("cvss", [{}])[0].get("score", 0) if metadata.get("cvss") else 0
+        cvss_score = metadata.get("cvss", [{}])[0].get(
+            "score", 0) if metadata.get("cvss") else 0
         severity = self._determinar_severidad_por_cvss(cvss_score)
 
         return {

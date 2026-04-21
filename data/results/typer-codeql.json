@@ -1,0 +1,1319 @@
+{
+  "total_issues": 93,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 93,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "py/clear-text-logging-sensitive-data",
+      "rule_index": 1,
+      "level": "warning",
+      "message": "This expression logs [sensitive data (password)](1) as clear text.",
+      "file": "docs_src/options/password/tutorial002_an_py310.py",
+      "region": {
+        "startLine": 16,
+        "startColumn": 11,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/clear-text-logging-sensitive-data",
+      "rule_index": 1,
+      "level": "warning",
+      "message": "This expression logs [sensitive data (password)](1) as clear text.\nThis expression logs [sensitive data (password)](2) as clear text.",
+      "file": "docs_src/options/password/tutorial002_py310.py",
+      "region": {
+        "startLine": 14,
+        "startColumn": 11,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1262,
+        "startColumn": 9,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1273,
+        "startColumn": 9,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_callback_warning.py",
+      "region": {
+        "startLine": 24,
+        "startColumn": 9,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_callback_warning.py",
+      "region": {
+        "startLine": 43,
+        "startColumn": 9,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "typer/params.py",
+      "region": {
+        "startLine": 75,
+        "startColumn": 11,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "typer/params.py",
+      "region": {
+        "startLine": 140,
+        "startColumn": 11,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "typer/params.py",
+      "region": {
+        "startLine": 1056,
+        "startColumn": 11,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "typer/params.py",
+      "region": {
+        "startLine": 1112,
+        "startColumn": 11,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_ambiguous_params.py",
+      "region": {
+        "startLine": 33,
+        "startColumn": 63,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_ambiguous_params.py",
+      "region": {
+        "startLine": 67,
+        "startColumn": 64,
+        "endColumn": 67
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_ambiguous_params.py",
+      "region": {
+        "startLine": 85,
+        "startColumn": 8,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_ambiguous_params.py",
+      "region": {
+        "startLine": 122,
+        "startColumn": 8,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_ambiguous_params.py",
+      "region": {
+        "startLine": 171,
+        "startColumn": 8,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_deprecation.py",
+      "region": {
+        "startLine": 20,
+        "startColumn": 12,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/multiple_values/multiple_options/tutorial001_py310.py",
+      "region": {
+        "startLine": 11,
+        "startColumn": 5,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/parameter_types/file/tutorial001_py310.py",
+      "region": {
+        "startLine": 8,
+        "startColumn": 5,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [ArgumentInfo](2).",
+      "file": "docs_src/multiple_values/arguments_with_multiple_values/tutorial002_py310.py",
+      "region": {
+        "startLine": 12,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/parameter_types/file/tutorial003_py310.py",
+      "region": {
+        "startLine": 9,
+        "startColumn": 5,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/options_autocompletion/tutorial006_py310.py",
+      "region": {
+        "startLine": 8,
+        "startColumn": 5,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/options_autocompletion/tutorial007_py310.py",
+      "region": {
+        "startLine": 26,
+        "startColumn": 5,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/options_autocompletion/tutorial008_py310.py",
+      "region": {
+        "startLine": 29,
+        "startColumn": 5,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/non-iterable-in-for-loop",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "This for-loop may attempt to iterate over a [non-iterable instance](1) of class [OptionInfo](2).",
+      "file": "docs_src/options_autocompletion/tutorial009_py310.py",
+      "region": {
+        "startLine": 30,
+        "startColumn": 5,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 156,
+        "endLine": 166,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1447,
+        "startColumn": 5,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/options/callback/tutorial003_an_py310.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/options/callback/tutorial003_py310.py",
+      "region": {
+        "startLine": 6,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/options/callback/tutorial004_an_py310.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 79
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/options/callback/tutorial004_py310.py",
+      "region": {
+        "startLine": 6,
+        "endColumn": 79
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/procedure-return-value-used",
+      "rule_index": 125,
+      "level": "warning",
+      "message": "The result of [rich_format_help](1) is used even though it is always None.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 728,
+        "startColumn": 16,
+        "endLine": 732,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/procedure-return-value-used",
+      "rule_index": 125,
+      "level": "warning",
+      "message": "The result of [rich_format_help](1) is used even though it is always None.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 810,
+        "startColumn": 16,
+        "endLine": 814,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 130,
+      "level": "warning",
+      "message": "The global variable '_click_patched' is not used.",
+      "file": "typer/completion.py",
+      "region": {
+        "startLine": 14,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Variable _rich_traceback_guard is not used.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1506,
+        "startColumn": 9,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Variable delete is not used.",
+      "file": "docs_src/prompt/tutorial003_py310.py",
+      "region": {
+        "startLine": 8,
+        "startColumn": 5,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 136,
+      "level": "warning",
+      "message": "This assignment to 'result' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "tests/test_tutorial/test_parameter_types/test_file/test_tutorial005.py",
+      "region": {
+        "startLine": 31,
+        "startColumn": 5,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 136,
+      "level": "warning",
+      "message": "This assignment to 'result' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "tests/test_tutorial/test_parameter_types/test_file/test_tutorial005.py",
+      "region": {
+        "startLine": 32,
+        "startColumn": 5,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "Local variable 'click_install_param' may be used before it is initialized.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1183,
+        "startColumn": 41,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "Local variable 'click_show_param' may be used before it is initialized.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1184,
+        "startColumn": 41,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "Local variable 'click_install_param' may be used before it is initialized.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1201,
+        "startColumn": 41,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "Local variable 'click_show_param' may be used before it is initialized.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 1202,
+        "startColumn": 41,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/_completion_classes.py",
+      "region": {
+        "startLine": 25,
+        "startColumn": 5,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer._completion_classes](1) begins an import cycle.",
+      "file": "typer/completion.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 209,
+        "startColumn": 17,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 241,
+        "startColumn": 13,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 372,
+        "startColumn": 17,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 579,
+        "startColumn": 17,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 726,
+        "startColumn": 9,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 808,
+        "startColumn": 9,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.rich_utils](1) begins an import cycle.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 80,
+        "startColumn": 9,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [typer.models](1) begins an import cycle.",
+      "file": "typer/rich_utils.py",
+      "region": {
+        "startLine": 26,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'TyperCommand' is not used.\nImport of 'TyperGroup' is not used.",
+      "file": "typer/models.py",
+      "region": {
+        "startLine": 15,
+        "startColumn": 5,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ParamMeta' may not be defined if module [typer.models](1) is imported before module [typer.completion](2), as the [definition](3) of ParamMeta occurs after the cyclic [import](4) of typer.completion.",
+      "file": "typer/completion.py",
+      "region": {
+        "startLine": 10,
+        "startColumn": 21,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'Option' may not be defined if module [typer.params](1) is imported before module [typer.completion](2), as the [definition](3) of Option occurs after the cyclic [import](4) of typer.completion.",
+      "file": "typer/completion.py",
+      "region": {
+        "startLine": 11,
+        "startColumn": 21,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_params_from_function' may not be defined if module [typer.utils](1) is imported before module [typer.completion](2), as the [definition](3) of get_params_from_function occurs after the cyclic [import](4) of typer.completion.",
+      "file": "typer/completion.py",
+      "region": {
+        "startLine": 12,
+        "startColumn": 20,
+        "endColumn": 44
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'parse_boolean_env_var' may not be defined if module [typer.utils](1) is imported before module [typer.core](2), as the [definition](3) of parse_boolean_env_var occurs after the cyclic [import](4) of typer.core.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 24,
+        "startColumn": 20,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_completion_inspect_parameters' may not be defined if module [typer.completion](1) is imported before module [typer.main](2), as the [definition](3) of get_completion_inspect_parameters occurs after the cyclic [import](4) of typer.main.\n'get_completion_inspect_parameters' may not be defined if module [typer.completion](1) is imported before module [typer.main](2), as the [definition](3) of get_completion_inspect_parameters occurs after the cyclic [import](5) of typer.main.\n'get_completion_inspect_parameters' may not be defined if module [typer.completion](1) is imported before module [typer.main](2), as the [definition](3) of get_completion_inspect_parameters occurs after the cyclic [import](6) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 23,
+        "startColumn": 25,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'DEFAULT_MARKUP_MODE' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of DEFAULT_MARKUP_MODE occurs after the cyclic [import](4) of typer.main.\n'DEFAULT_MARKUP_MODE' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](5) of DEFAULT_MARKUP_MODE occurs after the cyclic [import](4) of typer.main.\n'DEFAULT_MARKUP_MODE' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](6) of DEFAULT_MARKUP_MODE occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 25,
+        "startColumn": 5,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'HAS_RICH' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of HAS_RICH occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 26,
+        "startColumn": 5,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'MarkupMode' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of MarkupMode occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 27,
+        "startColumn": 5,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperArgument' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of TyperArgument occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 28,
+        "startColumn": 5,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperCommand' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of TyperCommand occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 29,
+        "startColumn": 5,
+        "endColumn": 17
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperGroup' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of TyperGroup occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 30,
+        "startColumn": 5,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperOption' may not be defined if module [typer.core](1) is imported before module [typer.main](2), as the [definition](3) of TyperOption occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 31,
+        "startColumn": 5,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'AnyType' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of AnyType occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 34,
+        "startColumn": 5,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ArgumentInfo' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of ArgumentInfo occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 35,
+        "startColumn": 5,
+        "endColumn": 17
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'CommandFunctionType' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of CommandFunctionType occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 36,
+        "startColumn": 5,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'CommandInfo' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of CommandInfo occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 37,
+        "startColumn": 5,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'Default' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of Default occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 38,
+        "startColumn": 5,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'DefaultPlaceholder' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of DefaultPlaceholder occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 39,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'DeveloperExceptionConfig' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of DeveloperExceptionConfig occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 40,
+        "startColumn": 5,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'FileBinaryRead' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of FileBinaryRead occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 41,
+        "startColumn": 5,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'FileBinaryWrite' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of FileBinaryWrite occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 42,
+        "startColumn": 5,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'FileText' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of FileText occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 43,
+        "startColumn": 5,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'FileTextWrite' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of FileTextWrite occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 44,
+        "startColumn": 5,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'NoneType' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of NoneType occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 45,
+        "startColumn": 5,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'OptionInfo' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of OptionInfo occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 46,
+        "startColumn": 5,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ParameterInfo' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of ParameterInfo occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 47,
+        "startColumn": 5,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ParamMeta' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of ParamMeta occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 48,
+        "startColumn": 5,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'Required' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of Required occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 49,
+        "startColumn": 5,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperInfo' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of TyperInfo occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 50,
+        "startColumn": 5,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperPath' may not be defined if module [typer.models](1) is imported before module [typer.main](2), as the [definition](3) of TyperPath occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 51,
+        "startColumn": 5,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_params_from_function' may not be defined if module [typer.utils](1) is imported before module [typer.main](2), as the [definition](3) of get_params_from_function occurs after the cyclic [import](4) of typer.main.",
+      "file": "typer/main.py",
+      "region": {
+        "startLine": 53,
+        "startColumn": 20,
+        "endColumn": 44
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperCommand' may not be defined if module [typer.core](1) is imported before module [typer.models](2), as the [definition](3) of TyperCommand occurs after the cyclic [import](4) of typer.models.",
+      "file": "typer/models.py",
+      "region": {
+        "startLine": 15,
+        "startColumn": 23,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'TyperGroup' may not be defined if module [typer.core](1) is imported before module [typer.models](2), as the [definition](3) of TyperGroup occurs after the cyclic [import](4) of typer.models.",
+      "file": "typer/models.py",
+      "region": {
+        "startLine": 15,
+        "startColumn": 37,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'Typer' may not be defined if module [typer.main](1) is imported before module [typer.models](2), as the [definition](3) of Typer occurs after the cyclic [import](4) of typer.models.\n'Typer' may not be defined if module [typer.main](1) is imported before module [typer.models](2), as the [definition](3) of Typer occurs after the cyclic [import](5) of typer.models.\n'Typer' may not be defined if module [typer.main](1) is imported before module [typer.models](2), as the [definition](3) of Typer occurs after the cyclic [import](6) of typer.models.\n'Typer' may not be defined if module [typer.main](1) is imported before module [typer.models](2), as the [definition](3) of Typer occurs after the cyclic [import](7) of typer.models.",
+      "file": "typer/models.py",
+      "region": {
+        "startLine": 16,
+        "startColumn": 23,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ArgumentInfo' may not be defined if module [typer.models](1) is imported before module [typer.params](2), as the [definition](3) of ArgumentInfo occurs after the cyclic [import](4) of typer.params.",
+      "file": "typer/params.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 21,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'OptionInfo' may not be defined if module [typer.models](1) is imported before module [typer.params](2), as the [definition](3) of OptionInfo occurs after the cyclic [import](4) of typer.params.",
+      "file": "typer/params.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 35,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ArgumentInfo' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of ArgumentInfo occurs after the cyclic [import](4) of typer.utils.\n'ArgumentInfo' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of ArgumentInfo occurs after the cyclic [import](5) of typer.utils.",
+      "file": "typer/utils.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 21,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'OptionInfo' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of OptionInfo occurs after the cyclic [import](4) of typer.utils.\n'OptionInfo' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of OptionInfo occurs after the cyclic [import](5) of typer.utils.",
+      "file": "typer/utils.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 35,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ParameterInfo' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of ParameterInfo occurs after the cyclic [import](4) of typer.utils.\n'ParameterInfo' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of ParameterInfo occurs after the cyclic [import](5) of typer.utils.",
+      "file": "typer/utils.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 47,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'ParamMeta' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of ParamMeta occurs after the cyclic [import](4) of typer.utils.\n'ParamMeta' may not be defined if module [typer.models](1) is imported before module [typer.utils](2), as the [definition](3) of ParamMeta occurs after the cyclic [import](5) of typer.utils.",
+      "file": "typer/utils.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 62,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/commented-out-code",
+      "rule_index": 171,
+      "level": "warning",
+      "message": "This comment appears to contain commented-out code.",
+      "file": "typer/core.py",
+      "region": {
+        "startLine": 596,
+        "startColumn": 5,
+        "endLine": 597,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

@@ -1,0 +1,1212 @@
+{
+  "total_issues": 88,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 88,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "py/incomplete-url-substring-sanitization",
+      "rule_index": 30,
+      "level": "warning",
+      "message": "The string [fonts.googleapis.com](1) may be at an arbitrary position in the sanitized URL.",
+      "file": "tests/test_local_docs.py",
+      "region": {
+        "startLine": 63,
+        "startColumn": 12,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/jinja2/autoescape-false",
+      "rule_index": 42,
+      "level": "warning",
+      "message": "Using jinja2 templates with autoescape=False can potentially allow XSS attacks.",
+      "file": "scripts/docs.py",
+      "region": {
+        "startLine": 232,
+        "startColumn": 16,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_validation_error_context.py",
+      "region": {
+        "startLine": 91,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_validation_error_context.py",
+      "region": {
+        "startLine": 104,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_validation_error_context.py",
+      "region": {
+        "startLine": 118,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_validation_error_context.py",
+      "region": {
+        "startLine": 131,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "tests/test_validation_error_context.py",
+      "region": {
+        "startLine": 145,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/regex/unmatchable-caret",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "This regular expression includes an unmatchable caret at offset 45.",
+      "file": "scripts/doc_parsing_utils.py",
+      "region": {
+        "startLine": 31,
+        "startColumn": 5,
+        "endColumn": 63
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/regex/unmatchable-caret",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "This regular expression includes an unmatchable caret at offset 44.",
+      "file": "scripts/doc_parsing_utils.py",
+      "region": {
+        "startLine": 34,
+        "startColumn": 30,
+        "endColumn": 86
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 17,
+        "startColumn": 70,
+        "endColumn": 73
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 24,
+        "startColumn": 65,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_exception_handlers.py",
+      "region": {
+        "startLine": 40,
+        "startColumn": 19,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_schema_compat_pydantic_v2.py",
+      "region": {
+        "startLine": 21,
+        "startColumn": 33,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "tests/test_stringified_annotation_dependency_py314.py",
+      "region": {
+        "startLine": 10,
+        "startColumn": 22,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 97,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 125,
+        "startColumn": 17,
+        "endLine": 131,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/redundant-assignment",
+      "rule_index": 106,
+      "level": "warning",
+      "message": "This assignment assigns a variable to itself.",
+      "file": "fastapi/params.py",
+      "region": {
+        "startLine": 186,
+        "startColumn": 9,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/not-named-self",
+      "rule_index": 116,
+      "level": "warning",
+      "message": "Normal methods should have 'self', rather than 'cls', as their first parameter.",
+      "file": "tests/test_filter_pydantic_sub_model_pv2.py",
+      "region": {
+        "startLine": 28,
+        "startColumn": 9,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "tests/test_ws_router.py",
+      "region": {
+        "startLine": 242,
+        "startColumn": 11,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/security/tutorial003_an_py310.py",
+      "region": {
+        "startLine": 45,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/security/tutorial003_py310.py",
+      "region": {
+        "startLine": 43,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/security/tutorial004_an_py310.py",
+      "region": {
+        "startLine": 66,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/security/tutorial004_py310.py",
+      "region": {
+        "startLine": 65,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/security/tutorial005_an_py310.py",
+      "region": {
+        "startLine": 81,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "docs_src/security/tutorial005_py310.py",
+      "region": {
+        "startLine": 80,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "fastapi/dependencies/utils.py",
+      "region": {
+        "startLine": 753,
+        "endLine": 755,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 130,
+      "level": "warning",
+      "message": "The global variable '_Unset' is not used.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 186,
+        "endColumn": 7
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 130,
+      "level": "warning",
+      "message": "The global variable '_SSE_EVENT_SCHEMA' is not used.",
+      "file": "fastapi/sse.py",
+      "region": {
+        "startLine": 9,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 130,
+      "level": "warning",
+      "message": "The global variable '_PING_INTERVAL' is not used.",
+      "file": "fastapi/sse.py",
+      "region": {
+        "startLine": 222,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Variable Item is not used.",
+      "file": "tests/test_invalid_sequence_param.py",
+      "region": {
+        "startLine": 58,
+        "startColumn": 15,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 136,
+      "level": "warning",
+      "message": "This assignment to 'context' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "scripts/playwright/query_param_models/image01.py",
+      "region": {
+        "startLine": 12,
+        "startColumn": 5,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 136,
+      "level": "warning",
+      "message": "This assignment to 'context' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "scripts/playwright/cookie_param_models/image01.py",
+      "region": {
+        "startLine": 12,
+        "startColumn": 5,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [fastapi._compat.v2](1) begins an import cycle.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 148,
+        "startColumn": 9,
+        "endColumn": 67
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [fastapi.datastructures](1) begins an import cycle.",
+      "file": "fastapi/params.py",
+      "region": {
+        "startLine": 16,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Import of module [fastapi.params](1) begins an import cycle.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 337,
+        "startColumn": 5,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'iterate_in_threadpool' is not used.",
+      "file": "fastapi/concurrency.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 81
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'run_until_first_complete' is not used.",
+      "file": "fastapi/concurrency.py",
+      "region": {
+        "startLine": 10,
+        "endLine": 12,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'CORSMiddleware' is not used.",
+      "file": "fastapi/middleware/cors.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'URL' is not used.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 12,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'Address' is not used.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 13,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'FormData' is not used.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 14,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'QueryParams' is not used.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 16,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'State' is not used.",
+      "file": "fastapi/datastructures.py",
+      "region": {
+        "startLine": 17,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'GZipMiddleware' is not used.",
+      "file": "fastapi/middleware/gzip.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'HTTPSRedirectMiddleware' is not used.",
+      "file": "fastapi/middleware/httpsredirect.py",
+      "region": {
+        "startLine": 1,
+        "endLine": 3,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'HTTPConnection' is not used.",
+      "file": "fastapi/requests.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'Request' is not used.",
+      "file": "fastapi/requests.py",
+      "region": {
+        "startLine": 2,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'EventSourceResponse' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 5,
+        "endColumn": 67
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'FileResponse' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 6,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'HTMLResponse' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 7,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'PlainTextResponse' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 9,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'RedirectResponse' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 10,
+        "endColumn": 69
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'Response' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 11,
+        "endColumn": 53
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'StreamingResponse' is not used.",
+      "file": "fastapi/responses.py",
+      "region": {
+        "startLine": 12,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'Mount' is not used.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 89,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'StaticFiles' is not used.",
+      "file": "fastapi/staticfiles.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'Jinja2Templates' is not used.",
+      "file": "fastapi/templating.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'TestClient' is not used.",
+      "file": "fastapi/testclient.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'TrustedHostMiddleware' is not used.",
+      "file": "fastapi/middleware/trustedhost.py",
+      "region": {
+        "startLine": 1,
+        "endLine": 3,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'IncEx' is not used.",
+      "file": "fastapi/types.py",
+      "region": {
+        "startLine": 7,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'PydanticSchemaGenerationError' is not used.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 22,
+        "endColumn": 84
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'PydanticUndefinedAnnotation' is not used.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 23,
+        "endColumn": 80
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'GetJsonSchemaHandler' is not used.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 25,
+        "endLine": 27,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'Url' is not used.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 34,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'with_info_plain_validator_function' is not used.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 35,
+        "endLine": 37,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'WebSocket' is not used.",
+      "file": "fastapi/websockets.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'WebSocketDisconnect' is not used.",
+      "file": "fastapi/websockets.py",
+      "region": {
+        "startLine": 2,
+        "endColumn": 76
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'WebSocketState' is not used.",
+      "file": "fastapi/websockets.py",
+      "region": {
+        "startLine": 3,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 147,
+      "level": "warning",
+      "message": "Import of 'WSGIMiddleware' is not used.",
+      "file": "fastapi/middleware/wsgi.py",
+      "region": {
+        "startLine": 1,
+        "endLine": 3,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'_should_embed_body_fields' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of _should_embed_body_fields occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 44,
+        "startColumn": 5,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_body_field' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_body_field occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 45,
+        "startColumn": 5,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_dependant' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_dependant occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 46,
+        "startColumn": 5,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_flat_dependant' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_flat_dependant occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 47,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_parameterless_sub_dependant' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_parameterless_sub_dependant occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 48,
+        "startColumn": 5,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_stream_item_type' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_stream_item_type occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 49,
+        "startColumn": 5,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_typed_return_annotation' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_typed_return_annotation occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 50,
+        "startColumn": 5,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'solve_dependencies' may not be defined if module [fastapi.dependencies.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of solve_dependencies occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 51,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'create_model_field' may not be defined if module [fastapi.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of create_model_field occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 70,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'generate_unique_id' may not be defined if module [fastapi.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of generate_unique_id occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 71,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_value_or_default' may not be defined if module [fastapi.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of get_value_or_default occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 72,
+        "startColumn": 5,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'is_body_allowed_for_status_code' may not be defined if module [fastapi.utils](1) is imported before module [fastapi.routing](2), as the [definition](3) of is_body_allowed_for_status_code occurs after the cyclic [import](4) of fastapi.routing.",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 73,
+        "startColumn": 5,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'create_model_field' may not be defined if module [fastapi.utils](1) is imported before module [fastapi.dependencies.utils](2), as the [definition](3) of create_model_field occurs after the cyclic [import](4) of fastapi.dependencies.utils.",
+      "file": "fastapi/dependencies/utils.py",
+      "region": {
+        "startLine": 62,
+        "startColumn": 27,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'get_path_param_names' may not be defined if module [fastapi.utils](1) is imported before module [fastapi.dependencies.utils](2), as the [definition](3) of get_path_param_names occurs after the cyclic [import](4) of fastapi.dependencies.utils.",
+      "file": "fastapi/dependencies/utils.py",
+      "region": {
+        "startLine": 62,
+        "startColumn": 47,
+        "endColumn": 67
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unsafe-cyclic-import",
+      "rule_index": 149,
+      "level": "warning",
+      "message": "'APIRoute' may not be defined if module [fastapi.routing](1) is imported before module [fastapi.utils](2), as the [definition](3) of APIRoute occurs after the cyclic [import](4) of fastapi.utils.\n'APIRoute' may not be defined if module [fastapi.routing](1) is imported before module [fastapi.utils](2), as the [definition](3) of APIRoute occurs after the cyclic [import](5) of fastapi.utils.",
+      "file": "fastapi/utils.py",
+      "region": {
+        "startLine": 23,
+        "startColumn": 26,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/init-calls-subclass",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This call to [APIRoute.get_route_handler](1) in an initialization method is overridden by [GzipRoute.get_route_handler](2).\nThis call to [APIRoute.get_route_handler](1) in an initialization method is overridden by [GzipRoute.get_route_handler](3).\nThis call to [APIRoute.get_route_handler](1) in an initialization method is overridden by [ValidationErrorLoggingRoute.get_route_handler](4).\nThis call to [APIRoute.get_route_handler](1) in an initialization method is overridden by [ValidationErrorLoggingRoute.get_route_handler](5).\nThis call to [APIRoute.get_route_handler](1) in an initialization method is overridden by [TimedRoute.get_route_handler](6).",
+      "file": "fastapi/routing.py",
+      "region": {
+        "startLine": 976,
+        "startColumn": 37,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/missing-call-to-init",
+      "rule_index": 160,
+      "level": "warning",
+      "message": "This class does not call [HTTPBase.__init__](1) during initialization. ([HTTPBasic.__init__](2) may be missing a call to a base class __init__)",
+      "file": "fastapi/security/http.py",
+      "region": {
+        "startLine": 105,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/missing-call-to-init",
+      "rule_index": 160,
+      "level": "warning",
+      "message": "This class does not call [HTTPBase.__init__](1) during initialization. ([HTTPBearer.__init__](2) may be missing a call to a base class __init__)",
+      "file": "fastapi/security/http.py",
+      "region": {
+        "startLine": 222,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/missing-call-to-init",
+      "rule_index": 160,
+      "level": "warning",
+      "message": "This class does not call [HTTPBase.__init__](1) during initialization. ([HTTPDigest.__init__](2) may be missing a call to a base class __init__)",
+      "file": "fastapi/security/http.py",
+      "region": {
+        "startLine": 319,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/equals-hash-mismatch",
+      "rule_index": 168,
+      "level": "warning",
+      "message": "This class implements [__hash__](1), but does not implement __eq__.",
+      "file": "fastapi/_compat/v2.py",
+      "region": {
+        "startLine": 101,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}
