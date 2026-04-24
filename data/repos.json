@@ -1,48 +1,28 @@
 {
     "repositories": [
         {
-            "url": "https://github.com/fastapi/fastapi.git",
-            "path": "data/repos/fastapi",
+            "url": "https://github.com/actions/starter-workflows.git",
+            "path": "data/repos/starter-workflows",
             "ref": null
         },
         {
-            "url": "https://github.com/fastapi/full-stack-fastapi-template.git",
-            "path": "data/repos/full-stack-fastapi-template",
+            "url": "https://github.com/actions/checkout.git",
+            "path": "data/repos/checkout",
             "ref": null
         },
         {
-            "url": "https://github.com/fastapi/fastapi-new.git",
-            "path": "data/repos/fastapi-new",
+            "url": "https://github.com/actions/github-script.git",
+            "path": "data/repos/github-script",
             "ref": null
         },
         {
-            "url": "https://github.com/fastapi/sqlmodel.git",
-            "path": "data/repos/sqlmodel",
+            "url": "https://github.com/actions/cache.git",
+            "path": "data/repos/cache",
             "ref": null
         },
         {
-            "url": "https://github.com/fastapi/annotated-doc.git",
-            "path": "data/repos/annotated-doc",
-            "ref": null
-        },
-        {
-            "url": "https://github.com/fastapi/fastapi-cli.git",
-            "path": "data/repos/fastapi-cli",
-            "ref": null
-        },
-        {
-            "url": "https://github.com/fastapi/asyncer.git",
-            "path": "data/repos/asyncer",
-            "ref": null
-        },
-        {
-            "url": "https://github.com/fastapi/typer.git",
-            "path": "data/repos/typer",
-            "ref": null
-        },
-        {
-            "url": "https://github.com/fastapi/fastapi-vscode.git",
-            "path": "data/repos/fastapi-vscode",
+            "url": "https://github.com/actions/toolkit.git",
+            "path": "data/repos/toolkit",
             "ref": null
         }
     ]
