@@ -85,7 +85,7 @@ class CodeQLAnalyzer:
 
         return repositorios
 
-    def run_codeql(self, repo_path: str) -> str:
+    def run_codeql(self, repo_path: str, pipeline=False) -> str:
         """Ejecuta CodeQL y devuelve el análisis en formato SARIF JSON."""
         ruta_repo = self.project_root / repo_path
 
@@ -101,15 +101,21 @@ class CodeQLAnalyzer:
 
         # Detectar lenguaje por extensiones de archivo
         # (CodeQL falla sin metadatos Git, así que hacemos detección simple)
-        lenguaje = self._detectar_lenguaje_simple(ruta_repo)
-        if not lenguaje:
-            LOGGER.warning(
-                "No se detectó lenguaje soportado en %s. Se omite.",
-                ruta_repo.name,
-            )
-            return json.dumps({"runs": []})
 
-        LOGGER.info(f"Lenguaje detectado en {ruta_repo.name}: {lenguaje}")
+        if pipeline:
+            LOGGER.info(
+                f"Pipeline mode: analizando pipeline de {ruta_repo.name}...")
+            lenguaje = "actions"  # Forzar lenguaje de queries de GitHub Actions
+        else:
+            lenguaje = self._detectar_lenguaje_simple(ruta_repo)
+            if not lenguaje:
+                LOGGER.warning(
+                    "No se detectó lenguaje soportado en %s. Se omite.",
+                    ruta_repo.name,
+                )
+                return json.dumps({"runs": []})
+
+            LOGGER.info(f"Lenguaje detectado en {ruta_repo.name}: {lenguaje}")
 
         # Crear base de datos de CodeQL con lenguaje explícito
         db_path = self._crear_base_datos_codeql(ruta_repo, lenguaje)
@@ -180,13 +186,16 @@ class CodeQLAnalyzer:
         LOGGER.info(f"parse_sarif: total_issues={resultados['total_issues']}")
         return resultados
 
-    def save_analysis(self, repo_name: str, analysis_data: dict) -> Path:
+    def save_analysis(self, repo_name: str, analysis_data: dict, pipeline: bool = False) -> Path:
         """Guarda el análisis en el directorio de salida."""
         if not repo_name:
             raise ValueError("El nombre del repositorio no puede estar vacio.")
 
         self.output_path.mkdir(parents=True, exist_ok=True)
-        ruta_salida = self.output_path / f"{repo_name}{SUFIJO_CODEQL}"
+        if pipeline:
+            ruta_salida = self.output_path / f"{repo_name}-pipeline.json"
+        else:
+            ruta_salida = self.output_path / f"{repo_name}{SUFIJO_CODEQL}"
 
         LOGGER.info(
             f"save_analysis: {repo_name} con {analysis_data.get('total_issues')} issues")
@@ -274,6 +283,83 @@ class CodeQLAnalyzer:
             errores,
         )
 
+    def run_cicd_analysis(self):
+        """Orquesta el descubrimiento y análisis con CodeQL."""
+        repositorios = self.discover_repositories()
+        self._validar_directorio_salida()
+
+        if not repositorios:
+            return
+
+        if not self.dry_run:
+            self.codeql_path = self._resolver_codeql()
+            LOGGER.info("Usando CodeQL CLI: %s", self.codeql_path)
+            # Ejecutar diagnóstico del entorno
+            self._diagnosticar_entorno()
+
+        self.output_path.mkdir(parents=True, exist_ok=True)
+
+        repositorios_analizados = 0
+        archivos_generados = 0
+        omitidos = 0
+        errores = 0
+
+        for indice, repo_path in enumerate(repositorios, start=1):
+            ruta_repo = self.project_root / repo_path
+            LOGGER.info(
+                "[%s/%s] Procesando repositorio %s",
+                indice,
+                len(repositorios),
+                repo_path,
+            )
+
+            if self.dry_run:
+                if not any(ruta_repo.iterdir()):
+                    LOGGER.warning(
+                        "[%s/%s] Se omite %s porque esta vacio.",
+                        indice,
+                        len(repositorios),
+                        ruta_repo.name,
+                    )
+                    omitidos += 1
+                    continue
+
+                ruta_salida = self.output_path / \
+                    f"{ruta_repo.name}{SUFIJO_CODEQL}"
+                LOGGER.info(
+                    "[%s/%s] Dry-run: se generaria %s",
+                    indice,
+                    len(repositorios),
+                    ruta_salida.relative_to(self.project_root),
+                )
+                continue
+
+            try:
+                sarif_data = self.run_codeql(repo_path, pipeline=True)
+                analysis = self.parse_sarif(sarif_data)
+                self.save_analysis(ruta_repo.name, analysis, pipeline=True)
+                repositorios_analizados += 1
+                archivos_generados += 1
+            except Exception as error:
+                errores += 1
+                self._eliminar_archivos_parciales(ruta_repo.name)
+                LOGGER.error(
+                    "[%s/%s] Error al procesar %s: %s",
+                    indice,
+                    len(repositorios),
+                    repo_path,
+                    error,
+                )
+
+        LOGGER.info(
+            "Resumen final | total_repos=%s | repos_analizados=%s | archivos_generados=%s | omitidos=%s | errores=%s",
+            len(repositorios),
+            repositorios_analizados,
+            archivos_generados,
+            omitidos,
+            errores,
+        )
+
     def _validar_directorio_repos(self):
         if not self.repos_path.exists():
             raise FileNotFoundError(
@@ -333,7 +419,7 @@ class CodeQLAnalyzer:
 
         # Verificar disponibilidad de query packs
         LOGGER.info("Verificando query packs...")
-        for lenguaje in ["python", "javascript", "java"]:
+        for lenguaje in ["python", "javascript", "java", "actions"]:
             pack_availble = self._verificar_query_pack(lenguaje)
             if pack_availble:
                 LOGGER.info(

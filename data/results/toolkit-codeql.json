@@ -8,7 +8,7 @@
   "issues": [
     {
       "rule_id": "js/shell-command-injection-from-environment",
-      "rule_index": 46,
+      "rule_index": 35,
       "level": "warning",
       "message": "This shell command depends on an uncontrolled [absolute path](1).",
       "file": "packages/cache/src/internal/tar.ts",
@@ -21,23 +21,36 @@
       "properties": {}
     },
     {
-      "rule_id": "js/file-system-race",
-      "rule_index": 86,
+      "rule_id": "js/indirect-command-line-injection",
+      "rule_index": 89,
       "level": "warning",
-      "message": "The file may have changed since it [was checked](1).",
-      "file": "packages/core/src/file-command.ts",
+      "message": "This command depends on an unsanitized [environment variable](1).\nThis command depends on an unsanitized [environment variable](2).\nThis command depends on an unsanitized [environment variable](3).\nThis command depends on an unsanitized [environment variable](4).\nThis command depends on an unsanitized [environment variable](5).\nThis command depends on an unsanitized [environment variable](6).\nThis command depends on an unsanitized [environment variable](7).\nThis command depends on an unsanitized [environment variable](8).\nThis command depends on an unsanitized [environment variable](9).\nThis command depends on an unsanitized [environment variable](10).\nThis command depends on an unsanitized [environment variable](11).\nThis command depends on an unsanitized [environment variable](12).\nThis command depends on an unsanitized [environment variable](13).\nThis command depends on an unsanitized [environment variable](14).",
+      "file": "packages/cache/src/internal/tar.ts",
       "region": {
-        "startLine": 22,
-        "startColumn": 3,
-        "endLine": 24,
-        "endColumn": 5
+        "startLine": 251,
+        "startColumn": 18,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/indirect-command-line-injection",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "This command depends on an unsanitized [environment variable](1).\nThis command depends on an unsanitized [environment variable](2).",
+      "file": "packages/tool-cache/src/tool-cache.ts",
+      "region": {
+        "startLine": 315,
+        "startColumn": 14,
+        "endColumn": 28
       },
       "kind": "notApplicable",
       "properties": {}
     },
     {
       "rule_id": "js/file-access-to-http",
-      "rule_index": 92,
+      "rule_index": 94,
       "level": "warning",
       "message": "Outbound network request depends on [file data](1).",
       "file": "packages/attest/src/artifactMetadata.ts",
@@ -52,7 +65,7 @@
     },
     {
       "rule_id": "js/file-access-to-http",
-      "rule_index": 92,
+      "rule_index": 94,
       "level": "warning",
       "message": "Outbound network request depends on [file data](1).",
       "file": "packages/attest/src/store.ts",
@@ -66,36 +79,23 @@
       "properties": {}
     },
     {
-      "rule_id": "js/indirect-command-line-injection",
-      "rule_index": 93,
+      "rule_id": "js/file-system-race",
+      "rule_index": 96,
       "level": "warning",
-      "message": "This command depends on an unsanitized [environment variable](1).\nThis command depends on an unsanitized [environment variable](2).\nThis command depends on an unsanitized [environment variable](3).\nThis command depends on an unsanitized [environment variable](4).\nThis command depends on an unsanitized [environment variable](5).\nThis command depends on an unsanitized [environment variable](6).\nThis command depends on an unsanitized [environment variable](7).\nThis command depends on an unsanitized [environment variable](8).\nThis command depends on an unsanitized [environment variable](9).\nThis command depends on an unsanitized [environment variable](10).\nThis command depends on an unsanitized [environment variable](11).\nThis command depends on an unsanitized [environment variable](12).\nThis command depends on an unsanitized [environment variable](13).\nThis command depends on an unsanitized [environment variable](14).",
-      "file": "packages/cache/src/internal/tar.ts",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "packages/core/src/file-command.ts",
       "region": {
-        "startLine": 251,
-        "startColumn": 18,
-        "endColumn": 25
-      },
-      "kind": "notApplicable",
-      "properties": {}
-    },
-    {
-      "rule_id": "js/indirect-command-line-injection",
-      "rule_index": 93,
-      "level": "warning",
-      "message": "This command depends on an unsanitized [environment variable](1).\nThis command depends on an unsanitized [environment variable](2).",
-      "file": "packages/tool-cache/src/tool-cache.ts",
-      "region": {
-        "startLine": 315,
-        "startColumn": 14,
-        "endColumn": 28
+        "startLine": 22,
+        "startColumn": 3,
+        "endLine": 24,
+        "endColumn": 5
       },
       "kind": "notApplicable",
       "properties": {}
     },
     {
       "rule_id": "js/useless-assignment-to-local",
-      "rule_index": 146,
+      "rule_index": 151,
       "level": "warning",
       "message": "The initial value of exitCode is unused, since it is always overwritten.",
       "file": "packages/exec/__tests__/exec.test.ts",
@@ -109,7 +109,7 @@
     },
     {
       "rule_id": "js/useless-assignment-to-local",
-      "rule_index": 146,
+      "rule_index": 151,
       "level": "warning",
       "message": "The initial value of exitCode is unused, since it is always overwritten.",
       "file": "packages/exec/__tests__/exec.test.ts",
@@ -123,7 +123,7 @@
     },
     {
       "rule_id": "js/useless-assignment-to-local",
-      "rule_index": 146,
+      "rule_index": 151,
       "level": "warning",
       "message": "The initial value of exitCode is unused, since it is always overwritten.",
       "file": "packages/exec/__tests__/exec.test.ts",
@@ -137,7 +137,7 @@
     },
     {
       "rule_id": "js/useless-assignment-to-local",
-      "rule_index": 146,
+      "rule_index": 151,
       "level": "warning",
       "message": "The initial value of exitCode is unused, since it is always overwritten.",
       "file": "packages/exec/__tests__/exec.test.ts",
@@ -151,7 +151,7 @@
     },
     {
       "rule_id": "js/unused-local-variable",
-      "rule_index": 150,
+      "rule_index": 152,
       "level": "warning",
       "message": "Unused variable isWindows.",
       "file": "packages/exec/__tests__/scripts/spawn-wait-for-file.cjs",

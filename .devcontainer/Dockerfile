@@ -32,6 +32,7 @@ RUN curl -sSfL https://github.com/github/codeql-cli-binaries/releases/download/v
 RUN codeql pack download codeql/python-queries \
     && codeql pack download codeql/javascript-queries \
     && codeql pack download codeql/java-queries \
+    && codeql pack download codeql/actions-queries \
     || echo "Note: Some query packs may not be available in offline mode. They will be downloaded on first use."
 
 # Verify CodeQL, Grype, Node.js, and npm installation
